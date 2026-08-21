@@ -1,0 +1,76 @@
+body {
+font-family: Arial, sans-serif;
+background:#f2f5f9;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+}
+.dark-btn img {
+    width: 40px;
+    height: 40px;
+}
+.container {
+width:350px;
+padding:25px;
+background:white;
+border-radius:15px;
+box-shadow:0 0 15px gray;
+text-align:center;
+}
+h1 {
+color:#2c3e50;
+}
+input {
+width:100%;
+padding:12px;
+margin:10px 0;
+font-size:18px;
+border-radius:8px;
+box-sizing:border-box;
+}
+.buttons {
+display:flex;
+flex-wrap
+justify-content:center;
+gap:10px;
+}
+button {
+width:60px;
+height:60px;
+font-size:22px;
+border:none;
+border-radius:10px;
+background:#3498db;
+color:white;
+cursor:pointer;
+}
+button:hover {
+transform:scale(1.05);
+}
+.dark-btn {
+background:#333;
+margin-bottom:10px;
+}
+/* Dark mode */
+.dark {
+background:#222;
+}
+.dark .container {
+background:#333;
+color:white;
+}
+.dark input {
+background:#555;
+color:white;
+}
+/* Mobile responsive */
+@media(max-width:400px){
+.container{
+width:90%;
+}
+button{
+width:55px;
+height:55px;
+}
+}
